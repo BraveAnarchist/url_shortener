@@ -25,7 +25,7 @@ app.post('/shorten', (req, res) => {
   const shortUrlKey = generateShortUrl();
   urlDatabase[shortUrlKey] = longUrl;
 
-  res.json({ shortUrl: `http://localhost:3000/${shortUrlKey}` });
+  res.json({ shortUrl: `https://url-shortener-1-fpyp.onrender.com/${shortUrlKey}` });
 });
 
 
